@@ -1,0 +1,10 @@
+{% extends 'qa/base.html' %}
+{% block content %}
+<h2>Ask a New Question</h2>
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="title" placeholder="Title" size="50"><br><br>
+    <textarea name="content" rows="6" cols="60" placeholder="Your question here..."></textarea><br>
+    <button type="submit">Post Question</button>
+</form>
+{% endblock %}
