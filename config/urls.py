@@ -24,7 +24,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('pybo/', include('pybo.urls')),
     path('request_test/', include('request_test.urls')),
-    path('',include('accounts.urls')),
+    path('account/',include('accounts.urls')),
+    path('api/', include('apiTest.urls')),
 
 ]
 if settings.DEBUG:

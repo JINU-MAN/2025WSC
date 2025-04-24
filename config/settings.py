@@ -34,6 +34,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',
+    'apiTest.apps.ApitestConfig',
     'accounts.apps.AccountsConfig',
     'request_test.apps.RequestTestConfig',
     'pybo.apps.PyboConfig',
