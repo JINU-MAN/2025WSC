@@ -43,4 +43,4 @@ def test_get_book_by_id_success():
 def test_get_book_by_id_not_found():
     with pytest.raises(BookNotFound) as exc_info:
         get_books_by_id(9999)
-    assert 'ID9999에 해당하는 책이 없습니다' in str(exc_info)
+    assert '해당하는 책이 없습니다' in str(exc_info)

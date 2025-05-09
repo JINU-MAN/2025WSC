@@ -17,5 +17,5 @@ def book_history(request, book_id):
     except BookNotFound as e:
         return HttpResponseNotFound(str(e))
     except BookHasNoBorrowHistory as e:
-        return render(request, 'book/no_history.html',{'message':str(e)})
-    return render(request,'book/book_history.html',{'book':book, 'history':history})
+        return render(request, 'book/book_history.html',{'message':str(e)})
+    return render(request,'book/book_history.html',{'book':book, 'histories':history})
