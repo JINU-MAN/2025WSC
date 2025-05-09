@@ -26,7 +26,7 @@ urlpatterns = [
     path('request_test/', include('request_test.urls')),
     path('account/',include('accounts.urls')),
     path('api/', include('apiTest.urls')),
-
+    path('book/', include('book.urls'))
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

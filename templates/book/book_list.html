@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>📚 책 목록</h1>
+<ul>
+  {% for book in books %}
+    <li>
+      <a href="{% url 'book_history' book.id %}">
+        {{ book.title }} by {{ book.author }}
+      </a>
+    </li>
+  {% empty %}
+    <li>등록된 책이 없습니다.</li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>

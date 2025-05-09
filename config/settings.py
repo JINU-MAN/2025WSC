@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'book.apps.BookConfig',
     'rest_framework',
     'apiTest.apps.ApitestConfig',
     'accounts.apps.AccountsConfig',
